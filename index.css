@@ -1,0 +1,706 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation styles */
+#nav {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+#span {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#span i {
+    margin-right: 8px;
+}
+
+#about {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+    margin-top: 15px;
+}
+
+#about li {
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#about li:hover {
+    color: darkgoldenrod;
+}
+
+/* Icon and button styling */
+#about li i {
+    font-size: 18px;
+}
+
+#up {
+    background-color: darkgoldenrod;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#up:hover {
+    background-color: goldenrod;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #span {
+        font-size: 20px;
+        justify-content: center;
+    }
+
+    #up {
+        margin-top: 10px;
+    }
+}
+
+ /* end of navbar section */
+
+/* Section 1 */
+#sec1 {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 20px;
+    flex-wrap: wrap; 
+}
+
+
+#mali {
+    width: 48%; 
+}
+
+
+#malo {
+    width: 48%; 
+    position: relative; 
+}
+
+#male {
+    border: 2px solid darkgoldenrod;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: darkgoldenrod;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+
+.mala {
+    border: 1px solid darkgoldenrod;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+
+.pop {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 30px;
+}
+
+
+#malomon {
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    list-style-type: none;
+    padding: 10px;
+}
+
+#malomon li {
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    width: auto;
+}
+
+#mama {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 25px; 
+}
+
+
+#first {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 60%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #sec1 {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    
+    #mali, #malo {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    
+    #malomon {
+        position: relative;
+        top: auto; 
+        right: auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+
+/* begin of box */
+
+
+
+#allbox {
+    margin-left: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+
+#box {
+    height: 350px;
+    width: 250px;
+    padding: 20px;
+    background-color: bisque;
+    border: 2px solid bisque;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+#box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+
+#box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+#add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#add h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+#add .to {
+    font-size: 0.9em;
+    color: darkgreen;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Add responsive design */
+@media (max-width: 768px) {
+    #allbox {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    #box {
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+}
+
+/* end ofthe box
+
+/* being of section two */
+/* chef with food section */
+/* General Styling */
+
+
+
+#chef-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+
+#food-container {
+    flex: 1;
+    margin-right: 20px; 
+}
+
+#food {
+    width: 100%;
+    max-width: 350px; 
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#flo {
+    flex: 2;
+}
+
+
+#more h1 {
+    font-size: 2em;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+#type p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+#clean {
+    margin-top: 20px;
+}
+
+
+ul {
+    list-style: none;
+}
+
+#kit, #pre {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#kit i, #pre i {
+    margin-right: 10px;
+    color: #ff6347; 
+}
+
+
+#line {
+    margin-top: 20px;
+}
+
+
+#us h6 {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    #chef-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #food-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #food {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #flo {
+        text-align: center;
+    }
+
+    #more h1 {
+        font-size: 1.5em;
+    }
+
+    #type p, #kit, #pre, #us h6 {
+        font-size: 1em;
+    }
+
+    #kit, #pre {
+        text-align: left;
+    }
+}
+
+
+
+
+
+#allbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.box {
+    width: 220px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
+
+
+.box img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.box h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+.box a {
+    color: yellow;
+    text-decoration: none;
+}
+
+.box a:hover {
+    color: orange;
+}
+
+
+.box p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Price and Add to Cart */
+.add {
+    margin-top: 10px;
+}
+
+.add h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.add .to {
+    font-size: 1.2em;
+    color: #28a745;
+    cursor: pointer;
+}
+
+.add .to:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    #allbox {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* begin of section three */
+/* begin of beans cake section */
+/* Container for the row */
+.row {
+    display: flex;
+    align-items: center; 
+    padding: 20px; 
+}
+
+
+.col {
+    flex: 1; 
+    padding: 10px; 
+}
+
+
+#cake {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 40%;
+}
+
+
+#abd {
+    padding-left: 20px; 
+}
+
+#ab {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#abc {
+    font-size: 16px;
+    color: #555;
+}
+
+#abcd {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007BFF; 
+}
+
+
+#box2{
+    height: 350px;
+    width:400px ;
+    border: 2px solid bisque;
+    background-color: bisque;
+    border-radius: 15px;
+}
+ #long{
+    padding-right: 50px;
+
+} 
+#pos{
+    border-radius: 50%;
+}
+#moy{
+    position: relative;
+    top: 50px;
+    margin-left:30px ;
+}
+ #ola{
+    margin-left: 70px;
+    display: inline-flex;
+    
+    
+}
+
+
+#ola {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+#box2 {
+    flex: 1; 
+    min-width: 250px; 
+    padding: 20px;
+    background-color: #f8f8f8; 
+    border-radius: 8px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+
+#long {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+#pos {
+    border-radius: 50%; 
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling for the heading */
+.cus {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #ola {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    #box2 {
+        width: 100%; 
+    }
+}
+
+/* begin of meet our chefs */
+#meet{
+    margin-left: 25px;
+    margin-top: 100px;
+}
+#box3{
+    border: 6px solid bisque;
+    width: fit-content;
+    border-bottom: 20px solid bisque;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 15px;
+    position: relative;
+    top: 100px;
+}
+#omo{
+    display: flex;
+    justify-content: space-around;
+}
+/* end of meet our chefs */
+/* end of section three */
+/* begin of section four */
+#iya{
+    border: 2px solid bisque ;
+    width: 1200px;
+    height: 350px;
+    background-color: bisque;
+    margin-left:80px ;
+    border-radius: 15px;
+    position: relative;
+    top:200px ;
+}
+#ifa{
+    border: 5px solid black;
+    height:400px;
+    width:220px ;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 900px;
+}
+#feel{
+    padding-right:900px ;
+}
+#rod{
+    padding-right: 700px;
+}
+#bami{
+    border: 2px solid yellow;
+    width: fit-content;
+    padding: 3px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: yellow;
+    position: relative;
+    top:23px ;
+}
+#ban{
+    border:2px solid yellow ;
+    width: 120px;
+    padding:5px ;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 150px;
+    position: relative;
+    bottom: 20px;
+}
+#play{
+    position: relative;
+    bottom:300px ;
+    margin-left: 40px;
+}
+#ute{
+    margin-left: 50px;
+    position: relative;
+    top:250px ;
+}
+/* end of section four */
+/* begin of section five */
+#fabi{
+     border-bottom: 2px solid bisque;
+     position: relative;
+     top: 290px;
+     width: 1250px;
+     margin: 30px;
+}
+.eat{
+    border-bottom: 1px solid bisque;
+    width: 150px;
+
+}
+#tube{ 
+    display: flex;
+    list-style-type: none;  
+}
+#wahala{
+    position: relative;
+    top:350px ;
+    margin-left: 30px;
+}
+.angle{
+    margin-left: 150px;
+    
+}
+#ramon{
+    margin-left: 200px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top:250px ;
+}
+    
